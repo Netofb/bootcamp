@@ -35,6 +35,9 @@
     
 //     }
 // }
+
+// Calculos
+/* 
 import java.util.Scanner;
 class Main {
     public static void main(String[] args){
@@ -48,6 +51,32 @@ class Main {
 
     }
 }
+*/
+
+// jogo
+
+import java.util.Scanner;
+import java.util.Random;
+
+class Main {
+    public static void main(String[] args) {
+
+        Random gerador = new Random();
+        int x = gerador.nextInt(100);
+
+        Scanner entrada = new Scanner(System.in);
+        System.out.print("adivinhe o número: ");
+
+        int numero = entrada.nextInt();
 
 
+        if(numero == x){
+            System.out.println("Pabéns você acertou: " + numero);
+        }else{
+            System.out.println("você errou, era o numero: " + x);
+        }
+        
+    }
+
+}
 
